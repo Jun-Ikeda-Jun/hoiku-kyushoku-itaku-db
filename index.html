@@ -1,0 +1,764 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>厨房が空く日カレンダー｜保育所・学校給食の調理業務委託が終わる日を、園ごとに残り月数順で</title>
+<meta name="description" content="市区町村が公表している保育所・こども園・学校給食の調理業務委託について、履行期間の終期・現在の受託者・契約方式・契約金額を、終期までの残り月数順に32件掲載。すべて出典リンク付き。">
+<style>
+:root{--bg:#f5f7f2;--panel:#fff;--ink:#1b2a1c;--sub:#5f7361;--sub2:#8ba18d;--ac:#2f7d4f;--line:#dde7dc;--hot:#c2410c;--A:#15803d;--B:#7c7c88;--C:#9a3412}
+@media(prefers-color-scheme:dark){:root{--bg:#0b140d;--panel:#131f16;--ink:#dce9dd;--sub:#93ab95;--sub2:#728a75;--ac:#5cc281;--line:#1f3323;--hot:#fb923c;--A:#4ade80;--B:#9aa4ad;--C:#fca5a5}}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%}
+.wrap{max-width:920px;margin:0 auto;padding:0 14px}
+header{background:linear-gradient(135deg,#2f7d4f,#12442a);color:#fff;padding:30px 0 26px}
+h1{margin:0;font-size:23px;letter-spacing:.02em}
+.tag{opacity:.93;margin-top:8px;font-size:13.5px;max-width:62em}
+.pills{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.pills span{background:rgba(255,255,255,.16);border-radius:20px;padding:4px 12px;font-size:12.5px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:16px 0;padding:0}
+summary{cursor:pointer;padding:13px 15px;font-weight:700;font-size:14px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";color:var(--ac)}
+details[open] summary::before{content:"▾ "}
+.dbody{padding:0 15px 15px;font-size:13px;color:var(--sub)}
+.dbody table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+.dbody th,.dbody td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.dbody th{background:rgba(128,128,128,.08);white-space:nowrap}
+.filters{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0 10px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.fgrid{display:flex;flex-wrap:wrap;gap:7px}
+.filters select,.filters input{font:inherit;font-size:13px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--ink);max-width:100%}
+.filters input{flex:1;min-width:150px}
+.hit{margin-top:8px;font-size:12.5px;color:var(--sub)}
+main{padding:6px 0 50px}
+.c{display:flex;gap:13px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0}
+.left{flex:0 0 84px;text-align:center;border-right:1px solid var(--line);padding-right:10px}
+.mo{font-size:19px;font-weight:800;color:var(--ac);line-height:1.25}
+.mo small{font-size:11px;font-weight:600;margin-left:1px}
+.mo.hot{color:var(--hot)}
+.end{font-size:11.5px;color:var(--sub);margin-top:3px}
+.fy{font-size:11px;color:var(--sub2);margin-top:2px}
+.body{flex:1;min-width:0}
+.body h3{margin:5px 0 8px;font-size:16px;line-height:1.4;word-break:break-word}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font-size:11px;border-radius:6px;padding:2px 7px;background:rgba(128,128,128,.13);color:var(--sub)}
+.j{font-weight:700!important;color:#fff!important}
+.jA{background:var(--A)!important}.jB{background:var(--B)!important}.jC{background:var(--C)!important}
+.kv{display:flex;gap:8px;font-size:13px;margin:3px 0}
+.kv>span{flex:0 0 8.2em;color:var(--sub);font-size:12px;padding-top:1px}
+.kv>b{flex:1;min-width:0;font-weight:600;word-break:break-word}
+.sub2{display:block;font-weight:400;font-size:11.5px;color:var(--sub2)}
+.note{margin-top:6px;font-size:11.5px;color:var(--hot);background:rgba(194,65,12,.09);border-radius:8px;padding:5px 9px}
+.tl{margin-top:8px;font-size:11.5px;color:var(--sub);background:rgba(128,128,128,.07);border-radius:8px;padding:6px 9px}
+.warn{display:block;color:var(--sub2);font-size:11px}
+.src{margin-top:8px;font-size:12.5px}
+.src a{color:var(--ac);text-decoration:none;font-weight:600}
+.none{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:26px;text-align:center;color:var(--sub);font-size:13px}
+footer{border-top:1px solid var(--line);padding:20px 0 46px;font-size:12px;color:var(--sub)}
+footer ul{padding-left:1.2em;margin:8px 0}
+footer a{color:var(--ac)}
+@media(max-width:560px){
+ .c{gap:10px;padding:12px}.left{flex-basis:66px;padding-right:8px}.mo{font-size:16px}
+ .kv{display:block}.kv>span{display:block;font-size:11px}
+}
+</style></head><body>
+<header><div class="wrap">
+<h1>厨房が空く日カレンダー</h1>
+<div class="tag">市区町村が公告・公表している「保育所調理業務委託」「給食調理業務委託」の履行期間を、園・施設の単位で集めて、終期までの残り月数順に並べた一覧。いま受託しているのは誰か、契約は何年で、いつ終わるのか、出典リンク付きで並べています。</div>
+<div class="pills">
+ <span>掲載 32件</span>
+ <span>A：逆算の窓の中 4件</span>
+ <span>B：まだ先 28件</span>
+ <span>C：残り6ヶ月未満 0件</span>
+ <span>受託者が公表済み 15件</span>
+ <span>出典 13ページ</span>
+ <span>2026-08-30時点</span>
+</div>
+</div></header>
+<div class="wrap">
+
+<details>
+<summary>この一覧の読み方と、A／B／C が何を意味するか</summary>
+<div class="dbody">
+<p>地方自治法第234条・同法施行令第167条の6により、地方公共団体の入札は<b>公告して行われ</b>、契約の相手方・契約金額・履行期間も自治体自身が公表しています。公募型プロポーザルの実施要領・選定結果も同じく公表物です。つまり<b>「この園の厨房の委託がいつ終わるか」は、契約の時点ですでに公表されている</b>のに、自治体ごとにばらばらのページに散っているために横断で見られていません。この一覧は、その公表物に書かれている事実だけを集めて、終期までの残り月数順に並べたものです。</p>
+<p><b>A／B／C は、当サイトが「終期まであと何ヶ月か」という1項目だけから機械的に付けた区分です。</b>自治体の発注予定を示すものでも、当サイトによる予測でもありません。</p>
+<table>
+<tr><th>区分</th><th>付ける条件</th><th>注意</th></tr>
+<tr><td><b>A</b></td><td>終期まで残り6〜18ヶ月の案件</td><td>過去の公告が終期の6〜18ヶ月前に出ている例が多い帯。次期の公告が同じ時期に出る保証はない。</td></tr><tr><td><b>B</b></td><td>終期まで残り18ヶ月を超える案件</td><td>終期は確定しているが、次期の動きが出るのはまだ先。</td></tr><tr><td><b>C</b></td><td>終期まで残り6ヶ月未満の案件</td><td>すでに次期の公告が出ている・契約更新で継続している可能性が高い。出典元で必ず現況を確認のこと。</td></tr>
+</table>
+<p>各カードの「終期から逆算した窓」は、終期から一定の月数（18ヶ月前・6ヶ月前）を単純に引いただけの目安です。終期から遡って表示する参考時点。公告がいつ出るかは自治体ごとに違ううえ、契約更新の定めがある案件では公告そのものが出ない。逆算の目安としてのみ表示する。当サイトが実際の時期を知っているわけではない。</p>
+<p><b>契約更新の定めがある案件では、終期が来ても公告は出ません。</b>出典本文に更新の定めの記載があるものにはカード内に注記を出しています。記載を拾えなかった案件にも更新の定めがあることはあるので、応募を検討する場合は必ず出典元で契約条件をご確認ください。</p>
+<p>「契約の長さ」「○年契約の○年目」は、公表された開始日と終期から機械的に数えたものです。開始日が公表されていない案件では表示されません。</p>
+<p>金額は<b>出典の表記のままの公表額</b>です。契約金額か、落札金額か、提案の上限額か、単年度か契約期間の総額か、消費税を含むかは自治体・案件ごとに異なるので、金額の意味は必ず出典で確認してください。なお、収集した中には収集時点で終期を過ぎたものが1件あり、次期の契約が別途締結されている可能性があるため本表からは除いています。</p>
+</div>
+</details>
+
+<div class="filters">
+<div class="fgrid">
+<select id="f-pref"><option value="">都道府県（すべて）</option><option value="兵庫県">兵庫県</option><option value="千葉県">千葉県</option><option value="奈良県">奈良県</option><option value="山形県">山形県</option><option value="愛知県">愛知県</option><option value="東京都">東京都</option><option value="神奈川県">神奈川県</option><option value="静岡県">静岡県</option></select>
+<select id="f-kind"><option value="">施設の種類（すべて）</option><option value="hoiku">保育所・保育園</option><option value="kodomo">認定こども園</option><option value="gakko">学校給食（小中）</option></select>
+<select id="f-judge"><option value="">A/B/C（すべて）</option><option value="A">A：逆算の窓の中</option><option value="B">B：まだ先</option><option value="C">C：残り6ヶ月未満</option></select>
+<select id="f-method"><option value="">契約方式（すべて）</option><option value="propo">公募型プロポーザル</option><option value="ippan">一般競争入札</option></select>
+<select id="f-fy"><option value="">終期の年度（すべて）</option><option value="2026">2026年度末に終期</option><option value="2027">2027年度末に終期</option><option value="2028">2028年度末に終期</option><option value="2029">2029年度末に終期</option><option value="2030">2030年度末に終期</option></select>
+<input id="f-q" type="search" placeholder="園名・受託者名・自治体名で絞り込む">
+</div>
+<div class="hit" id="hit"></div>
+</div>
+
+<main><div id="list">
+<article class="c" data-pref="東京都" data-kind="hoiku" data-judge="A" data-method="propo" data-fy="2026" data-q="亀戸第二保育園 株式会社メフォス 東京都江東区 保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo hot">残り7<small>ヶ月</small></div>
+    <div class="end">2027-03-31</div>
+    <div class="fy">2026年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jA">A：逆算の窓の中</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>亀戸第二保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都江東区</b></div>
+    <div class="kv"><span>所管</span><b>こども未来部保育政策課</b></div>
+    <div class="kv"><span>案件名</span><b>保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社メフォス</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2027-03-31 <span class="sub2">1年契約／1年契約の1年目</span></b></div>
+    
+    <div class="note">出典に契約更新の定めの記載があります。更新されれば終期に厨房は空きません。</div>
+    <div class="tl">終期から逆算した窓 ─ 2025年9月ごろ 〜 2026年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.koto.lg.jp/280306/kyuusyoku/r6kyuusyoku.html" target="_blank" rel="noopener">出典：東京都江東区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="千葉県" data-kind="gakko" data-judge="A" data-method="propo" data-fy="2026" data-q="千葉市立蘇我小学校他8校  千葉県千葉市 令和6年度千葉市立小学校給食調理業務委託">
+  <div class="left">
+    <div class="mo hot">残り7<small>ヶ月</small></div>
+    <div class="end">2027-03-31</div>
+    <div class="fy">2026年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jA">A：逆算の窓の中</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>千葉市立蘇我小学校他8校</h3>
+    <div class="kv"><span>発注</span><b>千葉県千葉市</b></div>
+    <div class="kv"><span>所管</span><b>教育委員会事務局学校教育部保健体育課</b></div>
+    <div class="kv"><span>案件名</span><b>令和6年度千葉市立小学校給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2024-04-01 〜 2027-03-31 <span class="sub2">3年契約／3年契約の3年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2025年9月ごろ 〜 2026年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiba.jp/kyoiku/gakkokyoiku/hokentaiiku/tyourigyoumuitakur4/06cyourigyoumuitaku.html" target="_blank" rel="noopener">出典：千葉県千葉市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="A" data-method="propo" data-fy="2026" data-q="南砂第三保育園 フジ産業株式会社 東京都江東区 保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo hot">残り7<small>ヶ月</small></div>
+    <div class="end">2027-03-31</div>
+    <div class="fy">2026年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jA">A：逆算の窓の中</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>南砂第三保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都江東区</b></div>
+    <div class="kv"><span>所管</span><b>こども未来部保育政策課</b></div>
+    <div class="kv"><span>案件名</span><b>保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>フジ産業株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2027-03-31 <span class="sub2">1年契約／1年契約の1年目</span></b></div>
+    
+    <div class="note">出典に契約更新の定めの記載があります。更新されれば終期に厨房は空きません。</div>
+    <div class="tl">終期から逆算した窓 ─ 2025年9月ごろ 〜 2026年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.koto.lg.jp/280306/kyuusyoku/r6kyuusyoku.html" target="_blank" rel="noopener">出典：東京都江東区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="A" data-method="propo" data-fy="2026" data-q="白河保育園 株式会社マインド 東京都江東区 保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo hot">残り7<small>ヶ月</small></div>
+    <div class="end">2027-03-31</div>
+    <div class="fy">2026年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jA">A：逆算の窓の中</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>白河保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都江東区</b></div>
+    <div class="kv"><span>所管</span><b>こども未来部保育政策課</b></div>
+    <div class="kv"><span>案件名</span><b>保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社マインド</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2027-03-31 <span class="sub2">1年契約／1年契約の1年目</span></b></div>
+    
+    <div class="note">出典に契約更新の定めの記載があります。更新されれば終期に厨房は空きません。</div>
+    <div class="tl">終期から逆算した窓 ─ 2025年9月ごろ 〜 2026年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.koto.lg.jp/280306/kyuusyoku/r6kyuusyoku.html" target="_blank" rel="noopener">出典：東京都江東区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="千葉県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2027" data-q="千葉市立寒川小学校他20校  千葉県千葉市 令和7年度千葉市立小学校給食調理業務委託">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>千葉市立寒川小学校他20校</h3>
+    <div class="kv"><span>発注</span><b>千葉県千葉市</b></div>
+    <div class="kv"><span>所管</span><b>教育委員会事務局学校教育部保健体育課</b></div>
+    <div class="kv"><span>案件名</span><b>令和7年度千葉市立小学校給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2025-04-01 〜 2028-03-31 <span class="sub2">3年契約／3年契約の2年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiba.jp/kyoiku/gakkokyoiku/hokentaiiku/tyourigyoumuitakur4/07cyourigyoumuitaku.html" target="_blank" rel="noopener">出典：千葉県千葉市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="千葉県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2027" data-q="千葉市立都賀小学校  千葉県千葉市 令和7年度千葉市立小学校給食調理業務委託＜都賀小学校・幕張新都心若葉住宅地区新設校（仮称）＞">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>千葉市立都賀小学校</h3>
+    <div class="kv"><span>発注</span><b>千葉県千葉市</b></div>
+    <div class="kv"><span>所管</span><b>教育委員会事務局学校教育部保健体育課</b></div>
+    <div class="kv"><span>案件名</span><b>令和7年度千葉市立小学校給食調理業務委託＜都賀小学校・幕張新都心若葉住宅地区新設校（仮称）＞</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2028-03-31 </b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiba.jp/kyoiku/gakkokyoiku/hokentaiiku/tyourigyoumuitakur4/07cyourigyoumuitaku2.html" target="_blank" rel="noopener">出典：千葉県千葉市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="文京区立こひなた保育園  東京都文京区 文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>文京区立こひなた保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都文京区</b></div>
+    
+    <div class="kv"><span>案件名</span><b>文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2028-03-31 <span class="sub2">1年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.bunkyo.lg.jp/b023/p001494.html" target="_blank" rel="noopener">出典：東京都文京区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="文京区立しおみ保育園  東京都文京区 文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>文京区立しおみ保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都文京区</b></div>
+    
+    <div class="kv"><span>案件名</span><b>文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2028-03-31 <span class="sub2">1年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.bunkyo.lg.jp/b023/p001494.html" target="_blank" rel="noopener">出典：東京都文京区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="文京区立青柳保育園  東京都文京区 文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>文京区立青柳保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都文京区</b></div>
+    
+    <div class="kv"><span>案件名</span><b>文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2028-03-31 <span class="sub2">1年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.bunkyo.lg.jp/b023/p001494.html" target="_blank" rel="noopener">出典：東京都文京区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="文京区立本郷保育園  東京都文京区 文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>文京区立本郷保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都文京区</b></div>
+    
+    <div class="kv"><span>案件名</span><b>文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2028-03-31 <span class="sub2">1年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.bunkyo.lg.jp/b023/p001494.html" target="_blank" rel="noopener">出典：東京都文京区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="東京都" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="文京区立本駒込南保育園  東京都文京区 文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>文京区立本駒込南保育園</h3>
+    <div class="kv"><span>発注</span><b>東京都文京区</b></div>
+    
+    <div class="kv"><span>案件名</span><b>文京区立保育園給食調理業務委託事業者の募集について（プロポーザル選定）</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2028-03-31 <span class="sub2">1年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.bunkyo.lg.jp/b023/p001494.html" target="_blank" rel="noopener">出典：東京都文京区の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2027" data-q="平塚市夕陽ケ丘保育園 株式会社サンユー 神奈川県平塚市 南原・夕陽ケ丘・若草保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo ">残り19<small>ヶ月</small></div>
+    <div class="end">2028-03-31</div>
+    <div class="fy">2027年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>平塚市夕陽ケ丘保育園</h3>
+    <div class="kv"><span>発注</span><b>神奈川県平塚市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>南原・夕陽ケ丘・若草保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社サンユー</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2028-03-31 <span class="sub2">2年契約／2年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2026年9月ごろ 〜 2027年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.hiratsuka.kanagawa.jp/kodomo/page82_00094.html" target="_blank" rel="noopener">出典：神奈川県平塚市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="静岡県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2028" data-q="沼津市立北部保育所 株式会社魚国総本社名古屋本部 静岡県沼津市 沼津市立北部保育所給食調理等業務委託">
+  <div class="left">
+    <div class="mo ">残り25<small>ヶ月</small></div>
+    <div class="end">2028-09-30</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>沼津市立北部保育所</h3>
+    <div class="kv"><span>発注</span><b>静岡県沼津市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>沼津市立北部保育所給食調理等業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社魚国総本社名古屋本部</b></div>
+    <div class="kv"><span>履行期間</span><b>2025-10-01 〜 2028-09-30 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年3月ごろ 〜 2028年3月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.numazu.shizuoka.jp/business/proposal/2024/hokubuhoikusho/index.htm" target="_blank" rel="noopener">出典：静岡県沼津市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="千葉県" data-kind="kodomo" data-judge="B" data-method="propo" data-fy="2028" data-q="南房総市内子ども園4カ所  千葉県南房総市 南房総市子ども園給食調理等業務委託">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">認定こども園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>南房総市内子ども園4カ所</h3>
+    <div class="kv"><span>発注</span><b>千葉県南房総市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>南房総市子ども園給食調理等業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2029-03-31 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>231,264,000円<span class="sub2">＝約2.31億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.minamiboso.chiba.jp/0000023498.html" target="_blank" rel="noopener">出典：千葉県南房総市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="山形県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2028" data-q="さくら保育園  山形県山形市 山形市立保育所（さくら保育園）給食調理業務">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>さくら保育園</h3>
+    <div class="kv"><span>発注</span><b>山形県山形市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>山形市立保育所（さくら保育園）給食調理業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2029-03-31 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.yamagata-yamagata.lg.jp/jigyosya/nyusatsu/1006744/1013539/1016635.html" target="_blank" rel="noopener">出典：山形県山形市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="山形県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2028" data-q="つばさ保育園  山形県山形市 山形市立保育所（つばさ保育園）給食調理業務">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>つばさ保育園</h3>
+    <div class="kv"><span>発注</span><b>山形県山形市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>山形市立保育所（つばさ保育園）給食調理業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2029-03-31 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.yamagata-yamagata.lg.jp/jigyosya/nyusatsu/1006744/1013539/1016635.html" target="_blank" rel="noopener">出典：山形県山形市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="奈良県" data-kind="kodomo" data-judge="B" data-method="ippan" data-fy="2028" data-q="奈良市立神功こども園  奈良県奈良市 奈良市立神功こども園給食調理業務">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">認定こども園</span><span class="t">一般競争入札</span><span class="t">公告・募集</span></div>
+    <h3>奈良市立神功こども園</h3>
+    <div class="kv"><span>発注</span><b>奈良県奈良市</b></div>
+    <div class="kv"><span>所管</span><b>幼保こども園課</b></div>
+    <div class="kv"><span>案件名</span><b>奈良市立神功こども園給食調理業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-04-01 〜 2029-03-31 <span class="sub2">2年契約</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.nara.lg.jp/soshiki/41/272230.html" target="_blank" rel="noopener">出典：奈良県奈良市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2028" data-q="平塚市若草保育園 株式会社サンユー 神奈川県平塚市 南原・夕陽ケ丘・若草保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>平塚市若草保育園</h3>
+    <div class="kv"><span>発注</span><b>神奈川県平塚市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>南原・夕陽ケ丘・若草保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社サンユー</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2029-03-31 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.hiratsuka.kanagawa.jp/kodomo/page82_00094.html" target="_blank" rel="noopener">出典：神奈川県平塚市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2028" data-q="平塚市南原保育園 株式会社サンユー 神奈川県平塚市 南原・夕陽ケ丘・若草保育園給食調理業務委託">
+  <div class="left">
+    <div class="mo ">残り31<small>ヶ月</small></div>
+    <div class="end">2029-03-31</div>
+    <div class="fy">2028年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>平塚市南原保育園</h3>
+    <div class="kv"><span>発注</span><b>神奈川県平塚市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>南原・夕陽ケ丘・若草保育園給食調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社サンユー</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2029-03-31 <span class="sub2">3年契約／3年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2027年9月ごろ 〜 2028年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.hiratsuka.kanagawa.jp/kodomo/page82_00094.html" target="_blank" rel="noopener">出典：神奈川県平塚市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="愛知県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2029" data-q="高根保育園  愛知県知立市 知立市立保育園給食調理委託業務 公募型プロポーザル">
+  <div class="left">
+    <div class="mo ">残り41<small>ヶ月</small></div>
+    <div class="end">2030-02-28</div>
+    <div class="fy">2029年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>高根保育園</h3>
+    <div class="kv"><span>発注</span><b>愛知県知立市</b></div>
+    <div class="kv"><span>所管</span><b>総務課</b></div>
+    <div class="kv"><span>案件名</span><b>知立市立保育園給食調理委託業務 公募型プロポーザル</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-03-01 〜 2030-02-28 <span class="sub2">3年契約</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>総額241,335千円<span class="sub2">＝約2.41億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2028年8月ごろ 〜 2029年8月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiryu.aichi.jp/soshiki/somu/somu/gyomu/5/puropo/19845.html" target="_blank" rel="noopener">出典：愛知県知立市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="愛知県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2029" data-q="上重原西保育園  愛知県知立市 知立市立保育園給食調理委託業務 公募型プロポーザル">
+  <div class="left">
+    <div class="mo ">残り41<small>ヶ月</small></div>
+    <div class="end">2030-02-28</div>
+    <div class="fy">2029年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>上重原西保育園</h3>
+    <div class="kv"><span>発注</span><b>愛知県知立市</b></div>
+    <div class="kv"><span>所管</span><b>総務課</b></div>
+    <div class="kv"><span>案件名</span><b>知立市立保育園給食調理委託業務 公募型プロポーザル</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-03-01 〜 2030-02-28 <span class="sub2">3年契約</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>総額241,335千円<span class="sub2">＝約2.41億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2028年8月ごろ 〜 2029年8月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiryu.aichi.jp/soshiki/somu/somu/gyomu/5/puropo/19845.html" target="_blank" rel="noopener">出典：愛知県知立市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="愛知県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2029" data-q="上重原保育園  愛知県知立市 知立市立保育園給食調理委託業務 公募型プロポーザル">
+  <div class="left">
+    <div class="mo ">残り41<small>ヶ月</small></div>
+    <div class="end">2030-02-28</div>
+    <div class="fy">2029年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>上重原保育園</h3>
+    <div class="kv"><span>発注</span><b>愛知県知立市</b></div>
+    <div class="kv"><span>所管</span><b>総務課</b></div>
+    <div class="kv"><span>案件名</span><b>知立市立保育園給食調理委託業務 公募型プロポーザル</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-03-01 〜 2030-02-28 <span class="sub2">3年契約</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>総額241,335千円<span class="sub2">＝約2.41億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2028年8月ごろ 〜 2029年8月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiryu.aichi.jp/soshiki/somu/somu/gyomu/5/puropo/19845.html" target="_blank" rel="noopener">出典：愛知県知立市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="愛知県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2029" data-q="新林保育園  愛知県知立市 知立市立保育園給食調理委託業務 公募型プロポーザル">
+  <div class="left">
+    <div class="mo ">残り41<small>ヶ月</small></div>
+    <div class="end">2030-02-28</div>
+    <div class="fy">2029年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">公告・募集</span></div>
+    <h3>新林保育園</h3>
+    <div class="kv"><span>発注</span><b>愛知県知立市</b></div>
+    <div class="kv"><span>所管</span><b>総務課</b></div>
+    <div class="kv"><span>案件名</span><b>知立市立保育園給食調理委託業務 公募型プロポーザル</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2027-03-01 〜 2030-02-28 <span class="sub2">3年契約</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>総額241,335千円<span class="sub2">＝約2.41億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2028年8月ごろ 〜 2029年8月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.chiryu.aichi.jp/soshiki/somu/somu/gyomu/5/puropo/19845.html" target="_blank" rel="noopener">出典：愛知県知立市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="こうべ小学校 コーベフーズ株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>こうべ小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>コーベフーズ株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>262,634,000円（税抜）<span class="sub2">＝約2.63億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="神戸祇園小学校 コーベフーズ株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>神戸祇園小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>コーベフーズ株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>262,634,000円（税抜）<span class="sub2">＝約2.63億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="本山第三小学校 コーベフーズ株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>本山第三小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>コーベフーズ株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>237,398,000円（税抜）<span class="sub2">＝約2.37億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="本庄小学校 コーベフーズ株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>本庄小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>コーベフーズ株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>237,398,000円（税抜）<span class="sub2">＝約2.37億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="住吉小学校 シダックス大新東ヒューマンサービス株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>住吉小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>シダックス大新東ヒューマンサービス株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>125,125,000円（税抜）<span class="sub2">＝約1.25億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="兵庫県" data-kind="gakko" data-judge="B" data-method="propo" data-fy="2030" data-q="千鳥が丘小学校 ハーベストネクスト株式会社 兵庫県神戸市 小学校給食自校調理校における調理等業務">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">学校給食（小中）</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>千鳥が丘小学校</h3>
+    <div class="kv"><span>発注</span><b>兵庫県神戸市</b></div>
+    
+    <div class="kv"><span>案件名</span><b>小学校給食自校調理校における調理等業務</b></div>
+    <div class="kv"><span>現在の受託者</span><b>ハーベストネクスト株式会社</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    <div class="kv"><span>公表された金額</span><b>109,090,900円（税抜）<span class="sub2">＝約1.09億円</span></b></div>
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kobe.lg.jp/a54017/itaku2025.html" target="_blank" rel="noopener">出典：兵庫県神戸市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2030" data-q="公立保育所  神奈川県川崎市 公立保育所調理業務委託">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>公立保育所</h3>
+    <div class="kv"><span>発注</span><b>神奈川県川崎市</b></div>
+    <div class="kv"><span>所管</span><b>こども未来局保育・子育て推進部</b></div>
+    <div class="kv"><span>案件名</span><b>公立保育所調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>（出典に記載なし）</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kawasaki.jp/templates/proposal/450/0000180943.html" target="_blank" rel="noopener">出典：神奈川県川崎市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2030" data-q="川崎市下小田中保育園 株式会社ニッコクトラスト 神奈川県川崎市 公立保育所調理業務委託">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>川崎市下小田中保育園</h3>
+    <div class="kv"><span>発注</span><b>神奈川県川崎市</b></div>
+    <div class="kv"><span>所管</span><b>こども未来局</b></div>
+    <div class="kv"><span>案件名</span><b>公立保育所調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社ニッコクトラスト</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kawasaki.jp/templates/proposal/450/0000180943.html" target="_blank" rel="noopener">出典：神奈川県川崎市の公表ページ →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-kind="hoiku" data-judge="B" data-method="propo" data-fy="2030" data-q="川崎市上麻生保育園 株式会社ニッコクトラスト 神奈川県川崎市 公立保育所調理業務委託">
+  <div class="left">
+    <div class="mo ">残り55<small>ヶ月</small></div>
+    <div class="end">2031-03-31</div>
+    <div class="fy">2030年度末</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：まだ先</span><span class="t">保育所・保育園</span><span class="t">公募型プロポーザル</span><span class="t">契約・選定の結果</span></div>
+    <h3>川崎市上麻生保育園</h3>
+    <div class="kv"><span>発注</span><b>神奈川県川崎市</b></div>
+    <div class="kv"><span>所管</span><b>こども未来局</b></div>
+    <div class="kv"><span>案件名</span><b>公立保育所調理業務委託</b></div>
+    <div class="kv"><span>現在の受託者</span><b>株式会社ニッコクトラスト</b></div>
+    <div class="kv"><span>履行期間</span><b>2026-04-01 〜 2031-03-31 <span class="sub2">5年契約／5年契約の1年目</span></b></div>
+    
+    
+    <div class="tl">終期から逆算した窓 ─ 2029年9月ごろ 〜 2030年9月ごろ<span class="warn">（過去の公告が終期の6〜18ヶ月前に出ている例が多いというだけの目安です。実際の公告時期を示すものではありません）</span></div>
+    <div class="src"><a href="https://www.city.kawasaki.jp/templates/proposal/450/0000180943.html" target="_blank" rel="noopener">出典：神奈川県川崎市の公表ページ →</a></div>
+  </div>
+</article>
+<div class="none" id="empty" style="display:none">条件に合う案件がありません。絞り込みを緩めてください。</div>
+</div></main>
+
+<footer>
+<p><b>出典と扱い方</b></p>
+<ul>
+<li>掲載しているのは、各市区町村が公表している入札公告・実施要領・入札結果・契約結果に<b>事実として書かれた項目</b>（施設名・発注した自治体・所管課・案件名・受託者の団体名・履行期間・契約方式・公表された金額）と、そこから機械的に計算した残り月数・契約の長さだけです。出典本文の募集の趣旨・仕様の説明・審査講評は転載していません。</li>
+<li>個人に関する情報（担当者名・代表者名・連絡先）は収集も掲載もしていません。受託者が個人の案件は掲載していません。</li>
+<li>次期の委託を実施するか、いつ公告するか、直営に戻すか、園を統廃合するかは<b>各自治体が決定する事項</b>であり、本サイトが予告・保証するものではありません。応募を検討する場合は必ず出典元の自治体の公表内容と公告・仕様書をご確認ください。</li>
+<li>収集は各サイトの robots.txt に従い、低頻度で行っています。掲載の取り下げをご希望の自治体・団体はご連絡ください。</li>
+</ul>
+<p><b>制度の一次情報</b></p>
+<ul>
+<li><a href="https://laws.e-gov.go.jp/law/322AC0000000067" target="_blank" rel="noopener">地方自治法 第234条（契約の締結）</a>（e-Gov法令検索）</li><li><a href="https://laws.e-gov.go.jp/law/322CO0000000016" target="_blank" rel="noopener">地方自治法施行令 第167条の6（入札の公告）</a>（e-Gov法令検索）</li><li><a href="https://www.mhlw.go.jp/web/t_doc?dataId=00ta6572&amp;dataType=1" target="_blank" rel="noopener">保育所における調理業務の委託について（児発第86号）</a>（厚生労働省 法令等データベース）</li><li><a href="https://www.houjin-bangou.nta.go.jp/" target="_blank" rel="noopener">法人番号公表サイト（受託者の商号・所在地を確認できる）</a>（国税庁）</li>
+</ul>
+<p>厨房が空く日カレンダー｜2026-08-30時点で32件を掲載。当サイトでは会員登録・決済・お問い合わせフォームによる個人情報の収集は行っていません。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var list=document.getElementById('list'), hit=document.getElementById('hit'), empty=document.getElementById('empty');
+  var cards=[].slice.call(list.getElementsByClassName('c'));
+  var keys=['pref','kind','judge','method','fy'];
+  var sels=keys.map(function(k){ return document.getElementById('f-'+k) });
+  var q=document.getElementById('f-q');
+  function apply(){
+    var t=(q.value||'').trim().toLowerCase(), n=0;
+    for(var i=0;i<cards.length;i++){
+      var c=cards[i], ok=true;
+      for(var k=0;k<keys.length;k++){
+        var v=sels[k].value;
+        if(v && c.getAttribute('data-'+keys[k])!==v){ ok=false; break }
+      }
+      if(ok && t && c.getAttribute('data-q').indexOf(t)<0) ok=false;
+      c.style.display=ok?'':'none';
+      if(ok) n++;
+    }
+    hit.textContent=n+'件を表示中（全'+cards.length+'件・終期までの残り月数が短い順）';
+    if(empty) empty.style.display=(n===0&&cards.length>0)?'':'none';
+  }
+  sels.forEach(function(s){ s.addEventListener('change',apply) });
+  q.addEventListener('input',apply);
+  apply();
+})();
+</script>
+
+
+<script data-goatcounter="https://junikeda.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body></html>
